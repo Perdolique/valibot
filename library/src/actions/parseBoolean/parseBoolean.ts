@@ -19,11 +19,11 @@ export interface ParseBooleanConfig {
   /**
    * The truthy values.
    */
-  truthy?: MaybeReadonly<unknown[]>;
+  truthy?: MaybeReadonly<unknown[]> | undefined;
   /**
    * The falsy values.
    */
-  falsy?: MaybeReadonly<unknown[]>;
+  falsy?: MaybeReadonly<unknown[]> | undefined;
 }
 
 /**
