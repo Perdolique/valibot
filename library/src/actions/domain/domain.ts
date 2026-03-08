@@ -8,6 +8,8 @@ import { _addIssue } from '../../utils/index.ts';
 
 /**
  * Domain issue interface.
+ *
+ * @beta
  */
 export interface DomainIssue<TInput extends string> extends BaseIssue<TInput> {
   /**
@@ -34,6 +36,8 @@ export interface DomainIssue<TInput extends string> extends BaseIssue<TInput> {
 
 /**
  * Domain action interface.
+ *
+ * @beta
  */
 export interface DomainAction<
   TInput extends string,
@@ -69,6 +73,8 @@ export interface DomainAction<
  * Unicode form are not supported.
  *
  * @returns A domain action.
+ *
+ * @beta
  */
 export function domain<TInput extends string>(): DomainAction<
   TInput,
@@ -85,6 +91,8 @@ export function domain<TInput extends string>(): DomainAction<
  * @param message The error message.
  *
  * @returns A domain action.
+ *
+ * @beta
  */
 export function domain<
   TInput extends string,
