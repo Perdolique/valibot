@@ -79,12 +79,12 @@ describe('nullable', () => {
       expectTypeOf<InferInput<Schema4>>().toEqualTypeOf<Input>();
       expectTypeOf<InferInput<Schema5>>().toEqualTypeOf<Input>();
       expectTypeOf<InferInput<Schema6>>().toEqualTypeOf<Input>();
-      expectTypeOf<InferInput<Schema7>>().toEqualTypeOf<
-        { foo: string[] } | null
-      >();
-      expectTypeOf<InferInput<Schema8>>().toEqualTypeOf<
-        { foo: string[] } | null
-      >();
+      expectTypeOf<InferInput<Schema7>>().toEqualTypeOf<{
+        foo: string[];
+      } | null>();
+      expectTypeOf<InferInput<Schema8>>().toEqualTypeOf<{
+        foo: string[];
+      } | null>();
     });
 
     test('of output', () => {

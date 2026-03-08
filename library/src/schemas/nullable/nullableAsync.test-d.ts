@@ -108,15 +108,15 @@ describe('nullableAsync', () => {
       expectTypeOf<InferInput<Schema6>>().toEqualTypeOf<Input>();
       expectTypeOf<InferInput<Schema7>>().toEqualTypeOf<Input>();
       expectTypeOf<InferInput<Schema8>>().toEqualTypeOf<Input>();
-      expectTypeOf<InferInput<Schema9>>().toEqualTypeOf<
-        { foo: string[] } | null
-      >();
-      expectTypeOf<InferInput<Schema10>>().toEqualTypeOf<
-        { foo: string[] } | null
-      >();
-      expectTypeOf<InferInput<Schema11>>().toEqualTypeOf<
-        { foo: string[] } | null
-      >();
+      expectTypeOf<InferInput<Schema9>>().toEqualTypeOf<{
+        foo: string[];
+      } | null>();
+      expectTypeOf<InferInput<Schema10>>().toEqualTypeOf<{
+        foo: string[];
+      } | null>();
+      expectTypeOf<InferInput<Schema11>>().toEqualTypeOf<{
+        foo: string[];
+      } | null>();
     });
 
     test('of output', () => {
