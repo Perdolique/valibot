@@ -7,7 +7,7 @@ import type {
 } from '../../types/index.ts';
 import { _getStandardProps } from '../../utils/index.ts';
 import { _LruCache } from './_LruCache.ts';
-import type { CacheConfig2 } from './types.ts';
+import type { Cache2, CacheConfig2 } from './types.ts';
 
 /**
  * Schema with cache2 type.
@@ -23,7 +23,7 @@ export type SchemaWithCache2<
   /**
    * The cache instance.
    */
-  readonly cache: _LruCache<
+  readonly cache: Cache2<
     OutputDataset<InferOutput<TSchema>, InferIssue<TSchema>>
   >;
 };

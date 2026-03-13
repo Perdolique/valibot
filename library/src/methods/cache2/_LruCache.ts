@@ -1,9 +1,9 @@
-import type { CacheConfig2 } from './types.ts';
+import type { Cache2, CacheConfig2 } from './types.ts';
 
 /**
  * Efficient LRU cache using Map iteration order.
  */
-class _LruCache<TValue> {
+class _LruCache<TValue> implements Cache2<TValue> {
   // Stores [value, timestamp] tuples to avoid object allocation overhead
   private readonly store = new Map<unknown, [TValue, number]>();
 

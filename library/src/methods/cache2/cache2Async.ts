@@ -12,7 +12,7 @@ import type {
 } from '../../types/index.ts';
 import { _getStandardProps } from '../../utils/index.ts';
 import { _LruCache } from './_LruCache.ts';
-import type { CacheConfig2 } from './types.ts';
+import type { Cache2, CacheConfig2 } from './types.ts';
 
 /**
  * Schema with cache2 async type.
@@ -36,7 +36,7 @@ export type SchemaWithCache2Async<
   /**
    * The cache instance.
    */
-  readonly cache: _LruCache<
+  readonly cache: Cache2<
     OutputDataset<InferOutput<TSchema>, InferIssue<TSchema>>
   >;
 
@@ -109,6 +109,10 @@ export function cache2Async(
   | BaseSchemaAsync<unknown, unknown, BaseIssue<unknown>>,
   CacheConfig2 | undefined
 > {
+  const pending = new Map<
+    unknown,
+    Promise<OutputDataset<unknown, BaseIssue<unknown>>>
+  >();
   return {
     ...schema,
     async: true,
@@ -118,14 +122,30 @@ export function cache2Async(
       return _getStandardProps(this);
     },
     async '~run'(dataset, runConfig) {
-      let outputDataset = this.cache.get(dataset.value);
-      if (!outputDataset) {
-        this.cache.set(
-          dataset.value,
-          (outputDataset = await schema['~run'](dataset, runConfig))
-        );
+      // Key to access cache and pending map
+      const key = dataset.value;
+
+      // Check and return cached output if exists
+      const cached = this.cache.get(key);
+      if (cached) return cached;
+
+      // If not cached, check if key is pending
+      let promise = pending.get(key);
+      if (!promise) {
+        promise = Promise.resolve(schema['~run'](dataset, runConfig));
+        pending.set(key, promise);
       }
-      return outputDataset;
+
+      // Await pending promise, cache output and return
+      try {
+        const outputDataset = await promise;
+        this.cache.set(key, outputDataset);
+        return outputDataset;
+
+        // Cleanup pending map
+      } finally {
+        pending.delete(key);
+      }
     },
   };
 }
