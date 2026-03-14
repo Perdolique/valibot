@@ -1,5 +1,4 @@
 export * from './_addIssue/index.ts';
-export * from './_Cache/index.ts';
 export * from './_getByteCount/index.ts';
 export * from './_getGraphemeCount/index.ts';
 export * from './_getLastMetadata/index.ts';
