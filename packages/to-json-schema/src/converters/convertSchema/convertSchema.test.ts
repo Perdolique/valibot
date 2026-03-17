@@ -857,6 +857,14 @@ describe('convertSchema', () => {
       });
     });
 
+    test('should convert never schema', () => {
+      expect(
+        convertSchema({}, v.never(), undefined, createContext())
+      ).toStrictEqual({
+        not: {},
+      });
+    });
+
     test('should convert exact optional schema without default', () => {
       expect(
         convertSchema(

@@ -96,6 +96,7 @@ type Schema =
       v.BaseSchema<unknown, unknown, v.BaseIssue<unknown>>,
       v.ErrorMessage<v.ArrayIssue> | undefined
     >
+  | v.NeverSchema<v.ErrorMessage<v.NeverIssue> | undefined>
   | v.LazySchema<v.BaseSchema<unknown, unknown, v.BaseIssue<unknown>>>;
 
 /**
@@ -453,6 +454,11 @@ export function convertSchema(
 
     case 'any':
     case 'unknown': {
+      break;
+    }
+
+    case 'never': {
+      jsonSchema.not = {};
       break;
     }
 
