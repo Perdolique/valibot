@@ -5963,8 +5963,8 @@
     },
     "./fi": {
       "import": {
-        "types": "./fi/index.d.ts",
-        "default": "./fi/index.js"
+        "types": "./fi/index.d.mts",
+        "default": "./fi/index.mjs"
       },
       "require": {
         "types": "./fi/index.d.cts",
@@ -5973,8 +5973,8 @@
     },
     "./fi/schema": {
       "import": {
-        "types": "./fi/schema.d.ts",
-        "default": "./fi/schema.js"
+        "types": "./fi/schema.d.mts",
+        "default": "./fi/schema.mjs"
       },
       "require": {
         "types": "./fi/schema.d.cts",
@@ -5983,8 +5983,8 @@
     },
     "./fi/base64": {
       "import": {
-        "types": "./fi/base64.d.ts",
-        "default": "./fi/base64.js"
+        "types": "./fi/base64.d.mts",
+        "default": "./fi/base64.mjs"
       },
       "require": {
         "types": "./fi/base64.d.cts",
@@ -5993,8 +5993,8 @@
     },
     "./fi/bic": {
       "import": {
-        "types": "./fi/bic.d.ts",
-        "default": "./fi/bic.js"
+        "types": "./fi/bic.d.mts",
+        "default": "./fi/bic.mjs"
       },
       "require": {
         "types": "./fi/bic.d.cts",
@@ -6003,8 +6003,8 @@
     },
     "./fi/bytes": {
       "import": {
-        "types": "./fi/bytes.d.ts",
-        "default": "./fi/bytes.js"
+        "types": "./fi/bytes.d.mts",
+        "default": "./fi/bytes.mjs"
       },
       "require": {
         "types": "./fi/bytes.d.cts",
@@ -6013,8 +6013,8 @@
     },
     "./fi/check": {
       "import": {
-        "types": "./fi/check.d.ts",
-        "default": "./fi/check.js"
+        "types": "./fi/check.d.mts",
+        "default": "./fi/check.mjs"
       },
       "require": {
         "types": "./fi/check.d.cts",
@@ -6023,8 +6023,8 @@
     },
     "./fi/checkAsync": {
       "import": {
-        "types": "./fi/checkAsync.d.ts",
-        "default": "./fi/checkAsync.js"
+        "types": "./fi/checkAsync.d.mts",
+        "default": "./fi/checkAsync.mjs"
       },
       "require": {
         "types": "./fi/checkAsync.d.cts",
@@ -6033,8 +6033,8 @@
     },
     "./fi/checkItems": {
       "import": {
-        "types": "./fi/checkItems.d.ts",
-        "default": "./fi/checkItems.js"
+        "types": "./fi/checkItems.d.mts",
+        "default": "./fi/checkItems.mjs"
       },
       "require": {
         "types": "./fi/checkItems.d.cts",
@@ -6043,8 +6043,8 @@
     },
     "./fi/checkItemsAsync": {
       "import": {
-        "types": "./fi/checkItemsAsync.d.ts",
-        "default": "./fi/checkItemsAsync.js"
+        "types": "./fi/checkItemsAsync.d.mts",
+        "default": "./fi/checkItemsAsync.mjs"
       },
       "require": {
         "types": "./fi/checkItemsAsync.d.cts",
@@ -6053,8 +6053,8 @@
     },
     "./fi/creditCard": {
       "import": {
-        "types": "./fi/creditCard.d.ts",
-        "default": "./fi/creditCard.js"
+        "types": "./fi/creditCard.d.mts",
+        "default": "./fi/creditCard.mjs"
       },
       "require": {
         "types": "./fi/creditCard.d.cts",
@@ -6063,8 +6063,8 @@
     },
     "./fi/cuid2": {
       "import": {
-        "types": "./fi/cuid2.d.ts",
-        "default": "./fi/cuid2.js"
+        "types": "./fi/cuid2.d.mts",
+        "default": "./fi/cuid2.mjs"
       },
       "require": {
         "types": "./fi/cuid2.d.cts",
@@ -6073,8 +6073,8 @@
     },
     "./fi/decimal": {
       "import": {
-        "types": "./fi/decimal.d.ts",
-        "default": "./fi/decimal.js"
+        "types": "./fi/decimal.d.mts",
+        "default": "./fi/decimal.mjs"
       },
       "require": {
         "types": "./fi/decimal.d.cts",
@@ -6083,18 +6083,28 @@
     },
     "./fi/digits": {
       "import": {
-        "types": "./fi/digits.d.ts",
-        "default": "./fi/digits.js"
+        "types": "./fi/digits.d.mts",
+        "default": "./fi/digits.mjs"
       },
       "require": {
         "types": "./fi/digits.d.cts",
         "default": "./fi/digits.cjs"
       }
     },
+    "./fi/domain": {
+      "import": {
+        "types": "./fi/domain.d.mts",
+        "default": "./fi/domain.mjs"
+      },
+      "require": {
+        "types": "./fi/domain.d.cts",
+        "default": "./fi/domain.cjs"
+      }
+    },
     "./fi/email": {
       "import": {
-        "types": "./fi/email.d.ts",
-        "default": "./fi/email.js"
+        "types": "./fi/email.d.mts",
+        "default": "./fi/email.mjs"
       },
       "require": {
         "types": "./fi/email.d.cts",
@@ -6103,8 +6113,8 @@
     },
     "./fi/emoji": {
       "import": {
-        "types": "./fi/emoji.d.ts",
-        "default": "./fi/emoji.js"
+        "types": "./fi/emoji.d.mts",
+        "default": "./fi/emoji.mjs"
       },
       "require": {
         "types": "./fi/emoji.d.cts",
@@ -6113,8 +6123,8 @@
     },
     "./fi/empty": {
       "import": {
-        "types": "./fi/empty.d.ts",
-        "default": "./fi/empty.js"
+        "types": "./fi/empty.d.mts",
+        "default": "./fi/empty.mjs"
       },
       "require": {
         "types": "./fi/empty.d.cts",
@@ -6123,18 +6133,28 @@
     },
     "./fi/endsWith": {
       "import": {
-        "types": "./fi/endsWith.d.ts",
-        "default": "./fi/endsWith.js"
+        "types": "./fi/endsWith.d.mts",
+        "default": "./fi/endsWith.mjs"
       },
       "require": {
         "types": "./fi/endsWith.d.cts",
         "default": "./fi/endsWith.cjs"
       }
     },
+    "./fi/entries": {
+      "import": {
+        "types": "./fi/entries.d.mts",
+        "default": "./fi/entries.mjs"
+      },
+      "require": {
+        "types": "./fi/entries.d.cts",
+        "default": "./fi/entries.cjs"
+      }
+    },
     "./fi/everyItem": {
       "import": {
-        "types": "./fi/everyItem.d.ts",
-        "default": "./fi/everyItem.js"
+        "types": "./fi/everyItem.d.mts",
+        "default": "./fi/everyItem.mjs"
       },
       "require": {
         "types": "./fi/everyItem.d.cts",
@@ -6143,8 +6163,8 @@
     },
     "./fi/excludes": {
       "import": {
-        "types": "./fi/excludes.d.ts",
-        "default": "./fi/excludes.js"
+        "types": "./fi/excludes.d.mts",
+        "default": "./fi/excludes.mjs"
       },
       "require": {
         "types": "./fi/excludes.d.cts",
@@ -6153,8 +6173,8 @@
     },
     "./fi/finite": {
       "import": {
-        "types": "./fi/finite.d.ts",
-        "default": "./fi/finite.js"
+        "types": "./fi/finite.d.mts",
+        "default": "./fi/finite.mjs"
       },
       "require": {
         "types": "./fi/finite.d.cts",
@@ -6163,18 +6183,38 @@
     },
     "./fi/graphemes": {
       "import": {
-        "types": "./fi/graphemes.d.ts",
-        "default": "./fi/graphemes.js"
+        "types": "./fi/graphemes.d.mts",
+        "default": "./fi/graphemes.mjs"
       },
       "require": {
         "types": "./fi/graphemes.d.cts",
         "default": "./fi/graphemes.cjs"
       }
     },
+    "./fi/gtValue": {
+      "import": {
+        "types": "./fi/gtValue.d.mts",
+        "default": "./fi/gtValue.mjs"
+      },
+      "require": {
+        "types": "./fi/gtValue.d.cts",
+        "default": "./fi/gtValue.cjs"
+      }
+    },
+    "./fi/guard": {
+      "import": {
+        "types": "./fi/guard.d.mts",
+        "default": "./fi/guard.mjs"
+      },
+      "require": {
+        "types": "./fi/guard.d.cts",
+        "default": "./fi/guard.cjs"
+      }
+    },
     "./fi/hash": {
       "import": {
-        "types": "./fi/hash.d.ts",
-        "default": "./fi/hash.js"
+        "types": "./fi/hash.d.mts",
+        "default": "./fi/hash.mjs"
       },
       "require": {
         "types": "./fi/hash.d.cts",
@@ -6183,8 +6223,8 @@
     },
     "./fi/hexColor": {
       "import": {
-        "types": "./fi/hexColor.d.ts",
-        "default": "./fi/hexColor.js"
+        "types": "./fi/hexColor.d.mts",
+        "default": "./fi/hexColor.mjs"
       },
       "require": {
         "types": "./fi/hexColor.d.cts",
@@ -6193,8 +6233,8 @@
     },
     "./fi/hexadecimal": {
       "import": {
-        "types": "./fi/hexadecimal.d.ts",
-        "default": "./fi/hexadecimal.js"
+        "types": "./fi/hexadecimal.d.mts",
+        "default": "./fi/hexadecimal.mjs"
       },
       "require": {
         "types": "./fi/hexadecimal.d.cts",
@@ -6203,8 +6243,8 @@
     },
     "./fi/imei": {
       "import": {
-        "types": "./fi/imei.d.ts",
-        "default": "./fi/imei.js"
+        "types": "./fi/imei.d.mts",
+        "default": "./fi/imei.mjs"
       },
       "require": {
         "types": "./fi/imei.d.cts",
@@ -6213,8 +6253,8 @@
     },
     "./fi/includes": {
       "import": {
-        "types": "./fi/includes.d.ts",
-        "default": "./fi/includes.js"
+        "types": "./fi/includes.d.mts",
+        "default": "./fi/includes.mjs"
       },
       "require": {
         "types": "./fi/includes.d.cts",
@@ -6223,8 +6263,8 @@
     },
     "./fi/integer": {
       "import": {
-        "types": "./fi/integer.d.ts",
-        "default": "./fi/integer.js"
+        "types": "./fi/integer.d.mts",
+        "default": "./fi/integer.mjs"
       },
       "require": {
         "types": "./fi/integer.d.cts",
@@ -6233,8 +6273,8 @@
     },
     "./fi/ip": {
       "import": {
-        "types": "./fi/ip.d.ts",
-        "default": "./fi/ip.js"
+        "types": "./fi/ip.d.mts",
+        "default": "./fi/ip.mjs"
       },
       "require": {
         "types": "./fi/ip.d.cts",
@@ -6243,8 +6283,8 @@
     },
     "./fi/ipv4": {
       "import": {
-        "types": "./fi/ipv4.d.ts",
-        "default": "./fi/ipv4.js"
+        "types": "./fi/ipv4.d.mts",
+        "default": "./fi/ipv4.mjs"
       },
       "require": {
         "types": "./fi/ipv4.d.cts",
@@ -6253,18 +6293,28 @@
     },
     "./fi/ipv6": {
       "import": {
-        "types": "./fi/ipv6.d.ts",
-        "default": "./fi/ipv6.js"
+        "types": "./fi/ipv6.d.mts",
+        "default": "./fi/ipv6.mjs"
       },
       "require": {
         "types": "./fi/ipv6.d.cts",
         "default": "./fi/ipv6.cjs"
       }
     },
+    "./fi/isbn": {
+      "import": {
+        "types": "./fi/isbn.d.mts",
+        "default": "./fi/isbn.mjs"
+      },
+      "require": {
+        "types": "./fi/isbn.d.cts",
+        "default": "./fi/isbn.cjs"
+      }
+    },
     "./fi/isoDate": {
       "import": {
-        "types": "./fi/isoDate.d.ts",
-        "default": "./fi/isoDate.js"
+        "types": "./fi/isoDate.d.mts",
+        "default": "./fi/isoDate.mjs"
       },
       "require": {
         "types": "./fi/isoDate.d.cts",
@@ -6273,8 +6323,8 @@
     },
     "./fi/isoDateTime": {
       "import": {
-        "types": "./fi/isoDateTime.d.ts",
-        "default": "./fi/isoDateTime.js"
+        "types": "./fi/isoDateTime.d.mts",
+        "default": "./fi/isoDateTime.mjs"
       },
       "require": {
         "types": "./fi/isoDateTime.d.cts",
@@ -6283,8 +6333,8 @@
     },
     "./fi/isoTime": {
       "import": {
-        "types": "./fi/isoTime.d.ts",
-        "default": "./fi/isoTime.js"
+        "types": "./fi/isoTime.d.mts",
+        "default": "./fi/isoTime.mjs"
       },
       "require": {
         "types": "./fi/isoTime.d.cts",
@@ -6293,8 +6343,8 @@
     },
     "./fi/isoTimeSecond": {
       "import": {
-        "types": "./fi/isoTimeSecond.d.ts",
-        "default": "./fi/isoTimeSecond.js"
+        "types": "./fi/isoTimeSecond.d.mts",
+        "default": "./fi/isoTimeSecond.mjs"
       },
       "require": {
         "types": "./fi/isoTimeSecond.d.cts",
@@ -6303,8 +6353,8 @@
     },
     "./fi/isoTimestamp": {
       "import": {
-        "types": "./fi/isoTimestamp.d.ts",
-        "default": "./fi/isoTimestamp.js"
+        "types": "./fi/isoTimestamp.d.mts",
+        "default": "./fi/isoTimestamp.mjs"
       },
       "require": {
         "types": "./fi/isoTimestamp.d.cts",
@@ -6313,28 +6363,58 @@
     },
     "./fi/isoWeek": {
       "import": {
-        "types": "./fi/isoWeek.d.ts",
-        "default": "./fi/isoWeek.js"
+        "types": "./fi/isoWeek.d.mts",
+        "default": "./fi/isoWeek.mjs"
       },
       "require": {
         "types": "./fi/isoWeek.d.cts",
         "default": "./fi/isoWeek.cjs"
       }
     },
+    "./fi/isrc": {
+      "import": {
+        "types": "./fi/isrc.d.mts",
+        "default": "./fi/isrc.mjs"
+      },
+      "require": {
+        "types": "./fi/isrc.d.cts",
+        "default": "./fi/isrc.cjs"
+      }
+    },
+    "./fi/jwsCompact": {
+      "import": {
+        "types": "./fi/jwsCompact.d.mts",
+        "default": "./fi/jwsCompact.mjs"
+      },
+      "require": {
+        "types": "./fi/jwsCompact.d.cts",
+        "default": "./fi/jwsCompact.cjs"
+      }
+    },
     "./fi/length": {
       "import": {
-        "types": "./fi/length.d.ts",
-        "default": "./fi/length.js"
+        "types": "./fi/length.d.mts",
+        "default": "./fi/length.mjs"
       },
       "require": {
         "types": "./fi/length.d.cts",
         "default": "./fi/length.cjs"
       }
     },
+    "./fi/ltValue": {
+      "import": {
+        "types": "./fi/ltValue.d.mts",
+        "default": "./fi/ltValue.mjs"
+      },
+      "require": {
+        "types": "./fi/ltValue.d.cts",
+        "default": "./fi/ltValue.cjs"
+      }
+    },
     "./fi/mac": {
       "import": {
-        "types": "./fi/mac.d.ts",
-        "default": "./fi/mac.js"
+        "types": "./fi/mac.d.mts",
+        "default": "./fi/mac.mjs"
       },
       "require": {
         "types": "./fi/mac.d.cts",
@@ -6343,8 +6423,8 @@
     },
     "./fi/mac48": {
       "import": {
-        "types": "./fi/mac48.d.ts",
-        "default": "./fi/mac48.js"
+        "types": "./fi/mac48.d.mts",
+        "default": "./fi/mac48.mjs"
       },
       "require": {
         "types": "./fi/mac48.d.cts",
@@ -6353,8 +6433,8 @@
     },
     "./fi/mac64": {
       "import": {
-        "types": "./fi/mac64.d.ts",
-        "default": "./fi/mac64.js"
+        "types": "./fi/mac64.d.mts",
+        "default": "./fi/mac64.mjs"
       },
       "require": {
         "types": "./fi/mac64.d.cts",
@@ -6363,18 +6443,28 @@
     },
     "./fi/maxBytes": {
       "import": {
-        "types": "./fi/maxBytes.d.ts",
-        "default": "./fi/maxBytes.js"
+        "types": "./fi/maxBytes.d.mts",
+        "default": "./fi/maxBytes.mjs"
       },
       "require": {
         "types": "./fi/maxBytes.d.cts",
         "default": "./fi/maxBytes.cjs"
       }
     },
+    "./fi/maxEntries": {
+      "import": {
+        "types": "./fi/maxEntries.d.mts",
+        "default": "./fi/maxEntries.mjs"
+      },
+      "require": {
+        "types": "./fi/maxEntries.d.cts",
+        "default": "./fi/maxEntries.cjs"
+      }
+    },
     "./fi/maxGraphemes": {
       "import": {
-        "types": "./fi/maxGraphemes.d.ts",
-        "default": "./fi/maxGraphemes.js"
+        "types": "./fi/maxGraphemes.d.mts",
+        "default": "./fi/maxGraphemes.mjs"
       },
       "require": {
         "types": "./fi/maxGraphemes.d.cts",
@@ -6383,8 +6473,8 @@
     },
     "./fi/maxLength": {
       "import": {
-        "types": "./fi/maxLength.d.ts",
-        "default": "./fi/maxLength.js"
+        "types": "./fi/maxLength.d.mts",
+        "default": "./fi/maxLength.mjs"
       },
       "require": {
         "types": "./fi/maxLength.d.cts",
@@ -6393,8 +6483,8 @@
     },
     "./fi/maxSize": {
       "import": {
-        "types": "./fi/maxSize.d.ts",
-        "default": "./fi/maxSize.js"
+        "types": "./fi/maxSize.d.mts",
+        "default": "./fi/maxSize.mjs"
       },
       "require": {
         "types": "./fi/maxSize.d.cts",
@@ -6403,8 +6493,8 @@
     },
     "./fi/maxValue": {
       "import": {
-        "types": "./fi/maxValue.d.ts",
-        "default": "./fi/maxValue.js"
+        "types": "./fi/maxValue.d.mts",
+        "default": "./fi/maxValue.mjs"
       },
       "require": {
         "types": "./fi/maxValue.d.cts",
@@ -6413,8 +6503,8 @@
     },
     "./fi/maxWords": {
       "import": {
-        "types": "./fi/maxWords.d.ts",
-        "default": "./fi/maxWords.js"
+        "types": "./fi/maxWords.d.mts",
+        "default": "./fi/maxWords.mjs"
       },
       "require": {
         "types": "./fi/maxWords.d.cts",
@@ -6423,8 +6513,8 @@
     },
     "./fi/mimeType": {
       "import": {
-        "types": "./fi/mimeType.d.ts",
-        "default": "./fi/mimeType.js"
+        "types": "./fi/mimeType.d.mts",
+        "default": "./fi/mimeType.mjs"
       },
       "require": {
         "types": "./fi/mimeType.d.cts",
@@ -6433,18 +6523,28 @@
     },
     "./fi/minBytes": {
       "import": {
-        "types": "./fi/minBytes.d.ts",
-        "default": "./fi/minBytes.js"
+        "types": "./fi/minBytes.d.mts",
+        "default": "./fi/minBytes.mjs"
       },
       "require": {
         "types": "./fi/minBytes.d.cts",
         "default": "./fi/minBytes.cjs"
       }
     },
+    "./fi/minEntries": {
+      "import": {
+        "types": "./fi/minEntries.d.mts",
+        "default": "./fi/minEntries.mjs"
+      },
+      "require": {
+        "types": "./fi/minEntries.d.cts",
+        "default": "./fi/minEntries.cjs"
+      }
+    },
     "./fi/minGraphemes": {
       "import": {
-        "types": "./fi/minGraphemes.d.ts",
-        "default": "./fi/minGraphemes.js"
+        "types": "./fi/minGraphemes.d.mts",
+        "default": "./fi/minGraphemes.mjs"
       },
       "require": {
         "types": "./fi/minGraphemes.d.cts",
@@ -6453,8 +6553,8 @@
     },
     "./fi/minLength": {
       "import": {
-        "types": "./fi/minLength.d.ts",
-        "default": "./fi/minLength.js"
+        "types": "./fi/minLength.d.mts",
+        "default": "./fi/minLength.mjs"
       },
       "require": {
         "types": "./fi/minLength.d.cts",
@@ -6463,8 +6563,8 @@
     },
     "./fi/minSize": {
       "import": {
-        "types": "./fi/minSize.d.ts",
-        "default": "./fi/minSize.js"
+        "types": "./fi/minSize.d.mts",
+        "default": "./fi/minSize.mjs"
       },
       "require": {
         "types": "./fi/minSize.d.cts",
@@ -6473,8 +6573,8 @@
     },
     "./fi/minValue": {
       "import": {
-        "types": "./fi/minValue.d.ts",
-        "default": "./fi/minValue.js"
+        "types": "./fi/minValue.d.mts",
+        "default": "./fi/minValue.mjs"
       },
       "require": {
         "types": "./fi/minValue.d.cts",
@@ -6483,8 +6583,8 @@
     },
     "./fi/minWords": {
       "import": {
-        "types": "./fi/minWords.d.ts",
-        "default": "./fi/minWords.js"
+        "types": "./fi/minWords.d.mts",
+        "default": "./fi/minWords.mjs"
       },
       "require": {
         "types": "./fi/minWords.d.cts",
@@ -6493,8 +6593,8 @@
     },
     "./fi/multipleOf": {
       "import": {
-        "types": "./fi/multipleOf.d.ts",
-        "default": "./fi/multipleOf.js"
+        "types": "./fi/multipleOf.d.mts",
+        "default": "./fi/multipleOf.mjs"
       },
       "require": {
         "types": "./fi/multipleOf.d.cts",
@@ -6503,8 +6603,8 @@
     },
     "./fi/nanoid": {
       "import": {
-        "types": "./fi/nanoid.d.ts",
-        "default": "./fi/nanoid.js"
+        "types": "./fi/nanoid.d.mts",
+        "default": "./fi/nanoid.mjs"
       },
       "require": {
         "types": "./fi/nanoid.d.cts",
@@ -6513,8 +6613,8 @@
     },
     "./fi/nonEmpty": {
       "import": {
-        "types": "./fi/nonEmpty.d.ts",
-        "default": "./fi/nonEmpty.js"
+        "types": "./fi/nonEmpty.d.mts",
+        "default": "./fi/nonEmpty.mjs"
       },
       "require": {
         "types": "./fi/nonEmpty.d.cts",
@@ -6523,18 +6623,28 @@
     },
     "./fi/notBytes": {
       "import": {
-        "types": "./fi/notBytes.d.ts",
-        "default": "./fi/notBytes.js"
+        "types": "./fi/notBytes.d.mts",
+        "default": "./fi/notBytes.mjs"
       },
       "require": {
         "types": "./fi/notBytes.d.cts",
         "default": "./fi/notBytes.cjs"
       }
     },
+    "./fi/notEntries": {
+      "import": {
+        "types": "./fi/notEntries.d.mts",
+        "default": "./fi/notEntries.mjs"
+      },
+      "require": {
+        "types": "./fi/notEntries.d.cts",
+        "default": "./fi/notEntries.cjs"
+      }
+    },
     "./fi/notGraphemes": {
       "import": {
-        "types": "./fi/notGraphemes.d.ts",
-        "default": "./fi/notGraphemes.js"
+        "types": "./fi/notGraphemes.d.mts",
+        "default": "./fi/notGraphemes.mjs"
       },
       "require": {
         "types": "./fi/notGraphemes.d.cts",
@@ -6543,8 +6653,8 @@
     },
     "./fi/notLength": {
       "import": {
-        "types": "./fi/notLength.d.ts",
-        "default": "./fi/notLength.js"
+        "types": "./fi/notLength.d.mts",
+        "default": "./fi/notLength.mjs"
       },
       "require": {
         "types": "./fi/notLength.d.cts",
@@ -6553,8 +6663,8 @@
     },
     "./fi/notSize": {
       "import": {
-        "types": "./fi/notSize.d.ts",
-        "default": "./fi/notSize.js"
+        "types": "./fi/notSize.d.mts",
+        "default": "./fi/notSize.mjs"
       },
       "require": {
         "types": "./fi/notSize.d.cts",
@@ -6563,18 +6673,28 @@
     },
     "./fi/notValue": {
       "import": {
-        "types": "./fi/notValue.d.ts",
-        "default": "./fi/notValue.js"
+        "types": "./fi/notValue.d.mts",
+        "default": "./fi/notValue.mjs"
       },
       "require": {
         "types": "./fi/notValue.d.cts",
         "default": "./fi/notValue.cjs"
       }
     },
+    "./fi/notValues": {
+      "import": {
+        "types": "./fi/notValues.d.mts",
+        "default": "./fi/notValues.mjs"
+      },
+      "require": {
+        "types": "./fi/notValues.d.cts",
+        "default": "./fi/notValues.cjs"
+      }
+    },
     "./fi/notWords": {
       "import": {
-        "types": "./fi/notWords.d.ts",
-        "default": "./fi/notWords.js"
+        "types": "./fi/notWords.d.mts",
+        "default": "./fi/notWords.mjs"
       },
       "require": {
         "types": "./fi/notWords.d.cts",
@@ -6583,38 +6703,88 @@
     },
     "./fi/octal": {
       "import": {
-        "types": "./fi/octal.d.ts",
-        "default": "./fi/octal.js"
+        "types": "./fi/octal.d.mts",
+        "default": "./fi/octal.mjs"
       },
       "require": {
         "types": "./fi/octal.d.cts",
         "default": "./fi/octal.cjs"
       }
     },
+    "./fi/parseBoolean": {
+      "import": {
+        "types": "./fi/parseBoolean.d.mts",
+        "default": "./fi/parseBoolean.mjs"
+      },
+      "require": {
+        "types": "./fi/parseBoolean.d.cts",
+        "default": "./fi/parseBoolean.cjs"
+      }
+    },
+    "./fi/parseJson": {
+      "import": {
+        "types": "./fi/parseJson.d.mts",
+        "default": "./fi/parseJson.mjs"
+      },
+      "require": {
+        "types": "./fi/parseJson.d.cts",
+        "default": "./fi/parseJson.cjs"
+      }
+    },
     "./fi/partialCheck": {
       "import": {
-        "types": "./fi/partialCheck.d.ts",
-        "default": "./fi/partialCheck.js"
+        "types": "./fi/partialCheck.d.mts",
+        "default": "./fi/partialCheck.mjs"
       },
       "require": {
         "types": "./fi/partialCheck.d.cts",
         "default": "./fi/partialCheck.cjs"
       }
     },
+    "./fi/rawCheck": {
+      "import": {
+        "types": "./fi/rawCheck.d.mts",
+        "default": "./fi/rawCheck.mjs"
+      },
+      "require": {
+        "types": "./fi/rawCheck.d.cts",
+        "default": "./fi/rawCheck.cjs"
+      }
+    },
+    "./fi/rawTransform": {
+      "import": {
+        "types": "./fi/rawTransform.d.mts",
+        "default": "./fi/rawTransform.mjs"
+      },
+      "require": {
+        "types": "./fi/rawTransform.d.cts",
+        "default": "./fi/rawTransform.cjs"
+      }
+    },
     "./fi/regex": {
       "import": {
-        "types": "./fi/regex.d.ts",
-        "default": "./fi/regex.js"
+        "types": "./fi/regex.d.mts",
+        "default": "./fi/regex.mjs"
       },
       "require": {
         "types": "./fi/regex.d.cts",
         "default": "./fi/regex.cjs"
       }
     },
+    "./fi/rfcEmail": {
+      "import": {
+        "types": "./fi/rfcEmail.d.mts",
+        "default": "./fi/rfcEmail.mjs"
+      },
+      "require": {
+        "types": "./fi/rfcEmail.d.cts",
+        "default": "./fi/rfcEmail.cjs"
+      }
+    },
     "./fi/safeInteger": {
       "import": {
-        "types": "./fi/safeInteger.d.ts",
-        "default": "./fi/safeInteger.js"
+        "types": "./fi/safeInteger.d.mts",
+        "default": "./fi/safeInteger.mjs"
       },
       "require": {
         "types": "./fi/safeInteger.d.cts",
@@ -6623,18 +6793,28 @@
     },
     "./fi/size": {
       "import": {
-        "types": "./fi/size.d.ts",
-        "default": "./fi/size.js"
+        "types": "./fi/size.d.mts",
+        "default": "./fi/size.mjs"
       },
       "require": {
         "types": "./fi/size.d.cts",
         "default": "./fi/size.cjs"
       }
     },
+    "./fi/slug": {
+      "import": {
+        "types": "./fi/slug.d.mts",
+        "default": "./fi/slug.mjs"
+      },
+      "require": {
+        "types": "./fi/slug.d.cts",
+        "default": "./fi/slug.cjs"
+      }
+    },
     "./fi/someItem": {
       "import": {
-        "types": "./fi/someItem.d.ts",
-        "default": "./fi/someItem.js"
+        "types": "./fi/someItem.d.mts",
+        "default": "./fi/someItem.mjs"
       },
       "require": {
         "types": "./fi/someItem.d.cts",
@@ -6643,18 +6823,68 @@
     },
     "./fi/startsWith": {
       "import": {
-        "types": "./fi/startsWith.d.ts",
-        "default": "./fi/startsWith.js"
+        "types": "./fi/startsWith.d.mts",
+        "default": "./fi/startsWith.mjs"
       },
       "require": {
         "types": "./fi/startsWith.d.cts",
         "default": "./fi/startsWith.cjs"
       }
     },
+    "./fi/stringifyJson": {
+      "import": {
+        "types": "./fi/stringifyJson.d.mts",
+        "default": "./fi/stringifyJson.mjs"
+      },
+      "require": {
+        "types": "./fi/stringifyJson.d.cts",
+        "default": "./fi/stringifyJson.cjs"
+      }
+    },
+    "./fi/toBigint": {
+      "import": {
+        "types": "./fi/toBigint.d.mts",
+        "default": "./fi/toBigint.mjs"
+      },
+      "require": {
+        "types": "./fi/toBigint.d.cts",
+        "default": "./fi/toBigint.cjs"
+      }
+    },
+    "./fi/toDate": {
+      "import": {
+        "types": "./fi/toDate.d.mts",
+        "default": "./fi/toDate.mjs"
+      },
+      "require": {
+        "types": "./fi/toDate.d.cts",
+        "default": "./fi/toDate.cjs"
+      }
+    },
+    "./fi/toNumber": {
+      "import": {
+        "types": "./fi/toNumber.d.mts",
+        "default": "./fi/toNumber.mjs"
+      },
+      "require": {
+        "types": "./fi/toNumber.d.cts",
+        "default": "./fi/toNumber.cjs"
+      }
+    },
+    "./fi/toString": {
+      "import": {
+        "types": "./fi/toString.d.mts",
+        "default": "./fi/toString.mjs"
+      },
+      "require": {
+        "types": "./fi/toString.d.cts",
+        "default": "./fi/toString.cjs"
+      }
+    },
     "./fi/ulid": {
       "import": {
-        "types": "./fi/ulid.d.ts",
-        "default": "./fi/ulid.js"
+        "types": "./fi/ulid.d.mts",
+        "default": "./fi/ulid.mjs"
       },
       "require": {
         "types": "./fi/ulid.d.cts",
@@ -6663,8 +6893,8 @@
     },
     "./fi/url": {
       "import": {
-        "types": "./fi/url.d.ts",
-        "default": "./fi/url.js"
+        "types": "./fi/url.d.mts",
+        "default": "./fi/url.mjs"
       },
       "require": {
         "types": "./fi/url.d.cts",
@@ -6673,8 +6903,8 @@
     },
     "./fi/uuid": {
       "import": {
-        "types": "./fi/uuid.d.ts",
-        "default": "./fi/uuid.js"
+        "types": "./fi/uuid.d.mts",
+        "default": "./fi/uuid.mjs"
       },
       "require": {
         "types": "./fi/uuid.d.cts",
@@ -6683,18 +6913,28 @@
     },
     "./fi/value": {
       "import": {
-        "types": "./fi/value.d.ts",
-        "default": "./fi/value.js"
+        "types": "./fi/value.d.mts",
+        "default": "./fi/value.mjs"
       },
       "require": {
         "types": "./fi/value.d.cts",
         "default": "./fi/value.cjs"
       }
     },
+    "./fi/values": {
+      "import": {
+        "types": "./fi/values.d.mts",
+        "default": "./fi/values.mjs"
+      },
+      "require": {
+        "types": "./fi/values.d.cts",
+        "default": "./fi/values.cjs"
+      }
+    },
     "./fi/words": {
       "import": {
-        "types": "./fi/words.d.ts",
-        "default": "./fi/words.js"
+        "types": "./fi/words.d.mts",
+        "default": "./fi/words.mjs"
       },
       "require": {
         "types": "./fi/words.d.cts",
