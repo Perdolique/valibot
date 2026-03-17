@@ -7,11 +7,11 @@ import az from '../src/az';
 import ca from '../src/ca';
 import cs from '../src/cs';
 import de from '../src/de';
+import el from '../src/el';
 import es from '../src/es';
 import fa from '../src/fa';
 import fi from '../src/fi';
 import fr from '../src/fr';
-import gr from '../src/gr';
 import hu from '../src/hu';
 import id from '../src/id';
 import it from '../src/it';
@@ -46,11 +46,11 @@ const languages = [
   ca,
   cs,
   de,
+  el,
   es,
   fa,
   fi,
   fr,
-  gr,
   hu,
   id,
   it,
