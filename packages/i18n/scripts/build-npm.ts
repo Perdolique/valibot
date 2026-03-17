@@ -14,6 +14,7 @@ import it from '../src/it';
 import ja from '../src/ja';
 import ko from '../src/ko';
 import kr from '../src/kr';
+import mn from '../src/mn';
 import nb from '../src/nb';
 import nl from '../src/nl';
 import pl from '../src/pl';
@@ -27,7 +28,6 @@ import uk from '../src/uk';
 import vi from '../src/vi';
 import zhCN from '../src/zh-CN';
 import zhTW from '../src/zh-TW';
-import mn from '../src/mn';
 
 // Start timer
 console.time('build');

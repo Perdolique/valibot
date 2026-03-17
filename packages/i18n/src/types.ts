@@ -16,6 +16,7 @@ export type Language = {
     | 'ja'
     | 'ko'
     | 'kr'
+    | 'mn'
     | 'nb'
     | 'nl'
     | 'pl'
@@ -28,8 +29,7 @@ export type Language = {
     | 'uk'
     | 'vi'
     | 'zh-CN'
-    | 'zh-TW'
-    | 'mn';
+    | 'zh-TW';
   schema: ErrorMessage<BaseIssue<unknown>>;
   specific: {
     base64: ErrorMessage<BaseIssue<unknown>>;
