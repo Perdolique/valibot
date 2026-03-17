@@ -283,6 +283,13 @@ export function convertAction(
           `The "gt_value" action is not supported on type "${jsonSchema.type}".`
         );
       }
+      if (config?.target === 'openapi-3.0') {
+        errors = addError(
+          errors,
+          'The "gt_value" action is not supported for OpenAPI 3.0.'
+        );
+        break;
+      }
       jsonSchema.exclusiveMinimum = valibotAction.requirement as number;
       break;
     }
@@ -351,6 +358,13 @@ export function convertAction(
           errors,
           `The "lt_value" action is not supported on type "${jsonSchema.type}".`
         );
+      }
+      if (config?.target === 'openapi-3.0') {
+        errors = addError(
+          errors,
+          'The "lt_value" action is not supported for OpenAPI 3.0.'
+        );
+        break;
       }
       jsonSchema.exclusiveMaximum = valibotAction.requirement as number;
       break;
@@ -535,7 +549,13 @@ export function convertAction(
         );
         break;
       }
-      jsonSchema.const = valibotAction.requirement;
+      if (config?.target === 'openapi-3.0') {
+        // Hint: OpenAPI 3.0 does not support const. That's why we use an
+        // enum instead.
+        jsonSchema.enum = [valibotAction.requirement];
+      } else {
+        jsonSchema.const = valibotAction.requirement;
+      }
       break;
     }
 

@@ -442,6 +442,15 @@ describe('convertAction', () => {
     ).toThrowError(error2);
   });
 
+  test('should throw error for gt value action with openapi-3.0', () => {
+    const error = 'The "gt_value" action is not supported for OpenAPI 3.0.';
+    expect(() =>
+      convertAction({ type: 'number' }, v.gtValue<v.ValueInput, 3>(3), {
+        target: 'openapi-3.0',
+      })
+    ).toThrowError(error);
+  });
+
   test('should convert includes action', () => {
     expect(
       convertAction(
@@ -662,6 +671,15 @@ describe('convertAction', () => {
     expect(() =>
       convertAction({ type: 'string' }, action, undefined)
     ).toThrowError(error2);
+  });
+
+  test('should throw error for lt value action with openapi-3.0', () => {
+    const error = 'The "lt_value" action is not supported for OpenAPI 3.0.';
+    expect(() =>
+      convertAction({ type: 'number' }, v.ltValue<v.ValueInput, 10>(10), {
+        target: 'openapi-3.0',
+      })
+    ).toThrowError(error);
   });
 
   test('should convert max entries action', () => {
@@ -1273,6 +1291,19 @@ describe('convertAction', () => {
     });
   });
 
+  test('should convert value action for openapi-3.0', () => {
+    expect(
+      convertAction(
+        { type: 'string' },
+        v.value<v.ValueInput, 'foo'>('foo'),
+        { target: 'openapi-3.0' }
+      )
+    ).toStrictEqual({
+      type: 'string',
+      enum: ['foo'],
+    });
+  });
+
   test('should throw error for unsupported value action', () => {
     const error =
       'The requirement of the "value" action is not JSON compatible.';
@@ -1283,6 +1314,20 @@ describe('convertAction', () => {
       convertAction({}, v.value<v.ValueInput, Date>(new Date(0)), {
         errorMode: 'throw',
       })
+    ).toThrowError(error);
+    expect(() =>
+      convertAction(
+        { type: 'number' },
+        v.value<v.ValueInput, number>(NaN),
+        undefined
+      )
+    ).toThrowError(error);
+    expect(() =>
+      convertAction(
+        { type: 'number' },
+        v.value<v.ValueInput, number>(Infinity),
+        undefined
+      )
     ).toThrowError(error);
   });
 

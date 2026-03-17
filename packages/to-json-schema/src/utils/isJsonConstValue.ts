@@ -10,7 +10,7 @@ export function isJsonConstValue(
 ): value is boolean | number | string {
   return (
     typeof value === 'boolean' ||
-    typeof value === 'number' ||
+    (typeof value === 'number' && Number.isFinite(value)) ||
     typeof value === 'string'
   );
 }

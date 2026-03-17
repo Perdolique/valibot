@@ -95,7 +95,7 @@ This package is particularly popular for:
 | `maxValue`      | ⚠️     | Only in combination with `number` schema                    |
 | `metadata`      | ⚠️     | Only for valid `title`, `description` and `examples` values |
 | `minEntries`    | ✅     |                                                             |
-| `minLength`     | ⚠️     | Only in combination with `string` and `array` schemas       |
+| `minLength`     | ⚠️     | Only in combination with `string` and `array` schema        |
 | `minValue`      | ⚠️     | Only in combination with `number` schema                    |
 | `multipleOf`    | ✅     |                                                             |
 | `nanoid`        | ✅     |                                                             |
