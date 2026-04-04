@@ -71,15 +71,13 @@ const NumberSchema = v.unwrap(OptionalNumberSchema);
 When using `exactOptional` in a <Link href="../../pipe/">`pipe`</Link>, the pipe actions only execute if a `default_` value is provided or the key is present. This applies to all pipe actions including <Link href="../../transform/">`transform`</Link>, <Link href="../../check/">`check`</Link>, and others.
 
 ```ts
-// ❌ Pipe actions will NOT execute for missing keys
 const SchemaWithoutDefault = v.object({
   isEnabled: v.pipe(
     v.exactOptional(v.string()),
-    v.transform((value) => value === '1') // Won't run for missing keys
+    v.transform((value) => value === '1') // Does not run for missing keys
   ),
 }); // Output type: { isEnabled?: boolean }
 
-// ✅ Pipe actions WILL execute for missing keys using the default value
 const SchemaWithDefault = v.object({
   isEnabled: v.pipe(
     v.exactOptional(v.string(), '0'), // Default value provided

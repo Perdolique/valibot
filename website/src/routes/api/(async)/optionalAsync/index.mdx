@@ -124,9 +124,9 @@ When using `optionalAsync` in a <Link href="../../pipeAsync/">`pipeAsync`</Link>
 const SchemaWithoutDefault = v.objectAsync({
   isActive: v.pipeAsync(
     v.optionalAsync(v.string()),
-    v.transformAsync(async (value) => value === 'true') // Won't run for missing keys
+    v.transformAsync(async (value) => value === 'true') // Does not run for missing keys
   ),
-}); // Output type: { isActive?: boolean | undefined }
+}); // Output type: { isActive?: boolean }
 
 const SchemaWithDefault = v.objectAsync({
   isActive: v.pipeAsync(

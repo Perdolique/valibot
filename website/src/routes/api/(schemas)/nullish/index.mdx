@@ -89,9 +89,9 @@ When using `nullish` in a <Link href="../../pipe/">`pipe`</Link>, missing object
 const SchemaWithoutDefault = v.object({
   value: v.pipe(
     v.nullish(v.string()),
-    v.transform((input) => (input ?? 'hello').toUpperCase()) // Won't run for missing keys
+    v.transform((input) => (input ?? 'hello').toUpperCase()) // Does not run for missing keys
   ),
-}); // Output type: { value?: string | undefined | null }
+}); // Output type: { value?: string }
 
 const SchemaWithDefault = v.object({
   value: v.pipe(

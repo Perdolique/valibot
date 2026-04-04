@@ -124,9 +124,9 @@ When using `nullishAsync` in a <Link href="../../pipeAsync/">`pipeAsync`</Link>,
 const SchemaWithoutDefault = v.objectAsync({
   value: v.pipeAsync(
     v.nullishAsync(v.string()),
-    v.transformAsync(async (input) => (input ?? 'hello').toUpperCase()) // Won't run for missing keys
+    v.transformAsync(async (input) => (input ?? 'hello').toUpperCase()) // Does not run for missing keys
   ),
-}); // Output type: { value?: string | undefined | null }
+}); // Output type: { value?: string }
 
 const SchemaWithDefault = v.objectAsync({
   value: v.pipeAsync(

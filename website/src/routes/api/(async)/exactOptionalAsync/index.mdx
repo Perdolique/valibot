@@ -103,7 +103,7 @@ When using `exactOptionalAsync` in a <Link href="../../pipeAsync/">`pipeAsync`</
 const SchemaWithoutDefault = v.objectAsync({
   isEnabled: v.pipeAsync(
     v.exactOptionalAsync(v.string()),
-    v.transformAsync(async (value) => value === '1') // Won't run for missing keys
+    v.transformAsync(async (value) => value === '1') // Does not run for missing keys
   ),
 }); // Output type: { isEnabled?: boolean }
 
